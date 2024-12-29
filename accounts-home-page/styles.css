@@ -1,0 +1,128 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  height: 50px;
+  padding: 10px;
+}
+
+header div img {
+  height: 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.account-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 90%;
+}
+
+.account-head h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+.account-head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .status.active {
+    background-color: #28a745;
+  }
+  
+  .status.at-risk {
+    background-color: #ff4d4d;
+  }
+  
+  .status.vip {
+    background-color: #006400;
+  }
+  
+  .status.inactive {
+    background-color: #ffcc00;
+    color: #333;
+  }
+  
+  .status.loyal {
+    background-color: skyblue;
+    color: #333;
+  }

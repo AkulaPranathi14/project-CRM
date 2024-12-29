@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  height: 70px;
+  padding: 30px;
+}
+
+header div img {
+  height: 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.status.active {
+  background-color: #28a745;
+}
+
+.status.at-risk {
+  background-color: #ff4d4d;
+}
+
+.status.vip {
+  background-color: #006400;
+}
+
+.status.inactive {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.status.loyal {
+  background-color: skyblue;
+  color: #333;
+}
+
+.notes-box {
+  margin-top: 15px;
+}
+
+.notes-box label {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #333;
+}
+
+.notes-box textarea {
+  width: 60%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  background-color: #f9f9f9;
+}
+
+.notes-box textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.notes-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.notes-box button:hover {
+  background-color: #0056b3;
+}

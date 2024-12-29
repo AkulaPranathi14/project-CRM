@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../home-page/index.html"
+          ><img
+            src=" https://www.apty.io/wp-content/uploads/2024/06/logo.svg"
+            alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/leads-page/index.html">Leads</a></li>
+          <li><a href="/oppurtunity-home-page/index.html">Opportunities</a></li>
+          <li><a href="../accounts-home-page/index.html">Accounts</a></li>
+          <li><a href="/login-page/index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="lead-head-container">
+      <div class="lead-head">
+        <h1>Leads</h1>
+        <button onclick="createNew()">New</button>
+      </div>
+    </section>
+    <div class="table-container">
+      <table id="leads-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Phone</th>
+            
+            <th>Lead Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

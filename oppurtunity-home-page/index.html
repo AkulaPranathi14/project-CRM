@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opportunities Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../home-page/index.html"
+          ><img
+            src=" https://www.apty.io/wp-content/uploads/2024/06/logo.svg"
+            alt="Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/leads-page/index.html">Leads</a></li>
+          <li>
+            <a href="../oppurtunity-home-page/index.html">Opportunities</a>
+          </li>
+          <li><a href="/accounts-home-page/index.html">Accounts</a></li>
+          <li><a href="/login-page/login_page.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="lead-head-container">
+      <div class="lead-head">
+        <h1>Opportunities</h1>
+        <div class="filter-options">
+          <label
+            ><input
+              onchange="filtering('all')"
+              type="radio"
+              name="opportunity-filter"
+              value="all"
+              checked
+            />
+            All</label
+          >
+          <label
+            ><input
+              onchange="filtering('Closed Won')"
+              type="radio"
+              name="opportunity-filter"
+              value="closed-won"
+            />
+            Closed Won</label
+          >
+          <label
+            ><input
+              onchange="filtering('Closed Lost')"
+              type="radio"
+              name="opportunity-filter"
+              value="closed-lost"
+            />
+            Closed Lost</label
+          >
+        </div>
+        <button onclick="createNew()">New</button>
+      </div>
+    </section>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Opportunity Name</th>
+            <th>Account Name</th>
+            <th>Stage</th>
+            <th>Close Date</th>
+            <th>Probability</th>
+            <th>Lead Source</th>
+          </tr>
+        </thead>
+        <tbody id="opportunity-table"></tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

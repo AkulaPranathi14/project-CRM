@@ -1,0 +1,136 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  height: 50px;
+  padding: 10px;
+}
+
+header div img {
+  height: 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.lead-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 90%;
+  
+}
+
+.lead-head h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #333; 
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.lead-head button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lead-head button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+}
+.lead-head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.status-dropdown {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.status-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
